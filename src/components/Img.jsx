@@ -5,7 +5,7 @@ export default function Img({ src, alt, className = '' }) {
 
   if (failed) {
     return (
-      <div className="w-full h-full bg-placeholder flex items-center justify-center p-4 text-center text-[10px] tracking-[0.1em] uppercase font-mono text-ink/55">
+      <div className="w-full h-full bg-placeholder flex items-center justify-center p-4 text-center text-[10px] tracking-[0.1em] uppercase text-ink/55">
         {alt || 'image'}
       </div>
     )

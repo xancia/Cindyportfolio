@@ -6,7 +6,7 @@ Hey Cindy! This is your portfolio website. Here's everything you need to know to
 
 ## The one file you'll edit
 
-**`src/content.js`** is the only file you ever need to touch. Open it in any text editor (Notepad, TextEdit, VS Code — anything works) and you'll find clearly labelled sections for your projects, sketchbook, about page, and contact info.
+**`src/content.js`** is the only file you ever need to touch. Open it in any text editor (Notepad, TextEdit, VS Code — anything works) and you'll find clearly labelled sections for your projects, about page, resume, and contact info.
 
 ---
 
@@ -43,7 +43,7 @@ Open `src/content.js` and find the `projects` list. Copy an existing project blo
   description: "One or two sentences about the project.",
   images:      ["01.jpg", "02.jpg", "03.jpg"],
   cover:       "01.jpg",           // which image shows as the thumbnail
-  homeSize:    "big",              // see "Home page reel" below — remove this line to hide from home
+  featured:    true,               // shows on the home page — remove this line to leave it off
 },
 ```
 
@@ -51,32 +51,29 @@ Open `src/content.js` and find the `projects` list. Copy an existing project blo
 
 ---
 
-## Home page reel
+## The home page
 
-The home page shows a curated scroll of your work. To include a project on the home page, add a `homeSize` field to it. Leave it out to keep a project off the home page (it will still appear on the Work page).
+The home page shows your name, tagline, intro, resume and social links — plus up to **6 floating artwork cards** that visitors can drag around and click to open the project.
 
-| `homeSize` | Shape |
-|---|---|
-| `"big"` | Tall portrait (4:5) |
-| `"wide"` | Landscape (16:9) |
-| `"sq"` | Square (1:1) |
-| `"tall"` | Slim portrait (3:4) |
+To put a project on the home page, add `featured: true` to it. Remove the line to take it off (it will still appear on the Work page). If more than 6 projects are featured, the first 6 in the list are shown.
 
-Square and tall pieces automatically pair up side-by-side. Big and wide pieces take up a full row.
+You can also edit these home page texts at the top of `src/content.js`:
+
+- `tagline` — the short line under your name (e.g. `"illustrator · character designer"`)
+- `intro` — the one-sentence welcome
+- `location` — shown in the footer
 
 ---
 
-## Adding sketchbook images
+## Your resume
 
-**Step 1** — Drop your images into `public/art/sketchbook/`
+Drop your resume PDF at:
 
-**Step 2** — Add a line to the `sketchbook` list in `src/content.js`:
-
-```js
-{ file: "my-drawing.jpg", year: 2025 },
+```
+public/resume.pdf
 ```
 
-Images appear in the order they're listed.
+A "resume" button then appears on the home page and about page automatically. Don't have one ready? Set `resume: null` in `src/content.js` to hide the buttons.
 
 ---
 
@@ -88,7 +85,8 @@ Everything else is in `src/content.js` too:
 - **About page** — `about.bio`, `about.portrait`, `about.clients`, etc.
   - Drop your portrait photo at `public/art/portrait.jpg`
 - **Contact links** — `contact.email`, `contact.instagram`, etc.
-  - Set any field to `null` to hide it from the contact page
+  - These show on both the home page and the contact page
+  - Set any field to `null` to hide it everywhere
 
 ---
 

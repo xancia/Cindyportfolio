@@ -3,16 +3,20 @@
 @theme {
   /* Fonts */
   --font-sans: "Inter", system-ui, sans-serif;
-  --font-serif: "Fraunces", Georgia, serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
 
-  /* Palette — Editorial Quiet */
-  --color-warm: #f4efe6;
-  --color-ink: #1f1a14;
-  --color-placeholder: #e8e0d2;
+  /* Palette — Warm Studio */
+  --color-paper: #fbf7ef;
+  --color-ink: #2b241d;
+  --color-accent: #cb5f6f;
+  --color-accent-soft: #f8e4e7;
+  --color-placeholder: #ede4d3;
 
   /* Page-enter animation */
   --animate-fade: pageFade 0.4s cubic-bezier(0.2, 0.7, 0.3, 1);
+
+  /* Gentle bobbing for the home page art cards */
+  --animate-floaty: floaty 7s ease-in-out infinite;
 
   @keyframes pageFade {
     from {
@@ -24,6 +28,16 @@
       transform: translateY(0);
     }
   }
+
+  @keyframes floaty {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-9px);
+    }
+  }
 }
 
 *,
@@ -33,6 +47,10 @@
 }
 
 body {
-  background: var(--color-warm);
+  background: var(--color-paper);
   color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-accent-soft);
 }

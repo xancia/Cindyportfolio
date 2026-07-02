@@ -15,27 +15,22 @@
 //                    public/art/work/my-new-project/02.jpg
 //
 //  Step 3: Copy one of the project blocks below and paste it
-//          at the end of the "projects" list. Fill in your details.
-//          Make sure "id" matches the folder name exactly.
+//          where you want it in the "projects" list. Fill in
+//          your details. Make sure "id" matches the folder name.
 //
 //  Step 4: Save this file — your site is updated!
 //
-//  ── HOW TO ADD SKETCHBOOK IMAGES ────────────────────────────
+//  ── ABOUT "featured" ────────────────────────────────────────
 //
-//  Step 1: Drop your images into "public/art/sketchbook/"
-//  Step 2: Add a line to the "sketchbook" list below.
+//  Projects marked  featured: true  show up as the floating
+//  art cards on the home page (the first 6 featured projects).
+//  Every project always appears on the Work page either way.
 //
-//  ── ABOUT "homeSize" ────────────────────────────────────────
+//  ── YOUR RESUME ─────────────────────────────────────────────
 //
-//  homeSize controls how a project appears on the home page reel:
-//
-//    "big"  → tall portrait  (4:5 ratio)
-//    "wide" → landscape      (16:9 ratio)
-//    "sq"   → square         (1:1 ratio)
-//    "tall" → slim portrait  (3:4 ratio)
-//
-//  Tip: "sq" and "tall" pieces pair up side-by-side automatically.
-//  Leave homeSize out entirely to hide the project from the home reel.
+//  Drop your resume PDF at  public/resume.pdf  and the site
+//  will link to it from the home page and about page.
+//  Set  resume: null  below to hide the resume button.
 //
 //  ── IMAGE FILE TYPES ────────────────────────────────────────
 //
@@ -44,23 +39,31 @@
 // ================================================================
 
 const content = {
-  // Your name — appears in the top-left wordmark and page title
+  // Your name — appears in the wordmark, home page and page title
   name: "Cindy Ma",
+
+  // Short line under your name on the home page.
+  // The "·" dots are just typed characters — add or remove words freely.
+  tagline: "illustrator · character designer",
+
+  // One friendly sentence of welcome on the home page
+  intro: "Hi, I'm Cindy — bio here!",
 
   // Your city — shown at the bottom of the home page
   location: "North Carolina",
+
+  // Link to your resume — drop the file at public/resume.pdf
+  // Set to null to hide the resume buttons.
+  resume: "/resume.pdf",
 
   // Short line at the top of the contact page
   contactTagline:
     "Currently booking editorial & commercial commissions for 2025.",
 
-  // Intro text on the sketchbook page
-  sketchbookIntro:
-    "A loose, untidy archive of personal drawings, studies and experiments. Updated occasionally — please don't repost without asking.",
-
   // ─── YOUR CONTACT LINKS ───────────────────────────────────────
   //
-  //  Set any field to null to hide it from the contact page.
+  //  These appear on the home page and the contact page.
+  //  Set any field to null to hide it.
   //
   contact: {
     email: "hello@cindyma.com",
@@ -98,6 +101,7 @@ const content = {
   //
   //  Each entry is one project. Add as many as you like.
   //  Projects appear on the Work page in the order listed here.
+  //  Add  featured: true  to show a project on the home page.
   //
   projects: [
     {
@@ -111,7 +115,7 @@ const content = {
         "A short description of this project. One or two sentences about the brief, medium, or concept.",
       images: ["01.jpg", "02.jpg", "03.jpg", "04.jpg"],
       cover: "01.jpg", // thumbnail on Work and Home pages
-      homeSize: "big", // how it appears on home: "big" "wide" "sq" "tall"
+      featured: true, // shows as a floating card on the home page
     },
 
     {
@@ -123,7 +127,7 @@ const content = {
         "Personal sketchbook explorations turned into a small publication.",
       images: ["01.jpg", "02.jpg", "03.jpg"],
       cover: "01.jpg",
-      homeSize: "sq",
+      featured: true,
     },
 
     {
@@ -135,7 +139,7 @@ const content = {
         "Character design series for an independent publishing project.",
       images: ["01.jpg", "02.jpg", "03.jpg"],
       cover: "01.jpg",
-      homeSize: "sq",
+      featured: true,
     },
 
     {
@@ -146,7 +150,7 @@ const content = {
       description: "Typographic exploration and hand-lettering experiments.",
       images: ["01.jpg", "02.jpg", "03.jpg"],
       cover: "01.jpg",
-      homeSize: "wide",
+      featured: true,
     },
 
     {
@@ -157,7 +161,7 @@ const content = {
       description: "Editorial illustration series for a travel publication.",
       images: ["01.jpg", "02.jpg"],
       cover: "01.jpg",
-      homeSize: "tall",
+      featured: true,
     },
 
     {
@@ -168,7 +172,7 @@ const content = {
       description: "Concept and worldbuilding work for an indie game project.",
       images: ["01.jpg", "02.jpg", "03.jpg"],
       cover: "01.jpg",
-      homeSize: "tall",
+      featured: true,
     },
 
     {
@@ -179,7 +183,7 @@ const content = {
       description: "Typographic print series — risograph edition.",
       images: ["01.jpg", "02.jpg"],
       cover: "01.jpg",
-      // no homeSize → hidden from home reel, still shows on Work page
+      // no "featured" → not on the home page, still on the Work page
     },
 
     {
@@ -191,22 +195,6 @@ const content = {
       images: ["01.jpg", "02.jpg"],
       cover: "01.jpg",
     },
-  ],
-
-  // ─── SKETCHBOOK ───────────────────────────────────────────────
-  //
-  //  Drop images into public/art/sketchbook/ and list them here.
-  //  They appear in the order listed below.
-  //
-  sketchbook: [
-    { file: "01.jpg", year: 2024 },
-    { file: "02.jpg", year: 2024 },
-    { file: "03.jpg", year: 2024 },
-    { file: "04.jpg", year: 2024 },
-    { file: "05.jpg", year: 2023 },
-    { file: "06.jpg", year: 2023 },
-    { file: "07.jpg", year: 2023 },
-    { file: "08.jpg", year: 2023 },
   ],
 };
 
