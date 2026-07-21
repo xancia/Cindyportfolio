@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import Img from "./Img";
+import asset from "../asset.js";
 
 // Where the floating cards sit on large screens — corners and edges,
 // leaving the middle clear for the intro text.
@@ -189,7 +190,7 @@ function FloatingCard({ proj, slot, index, onOpen }) {
           />
           <div className="aspect-[4/5] overflow-hidden rounded-xl pointer-events-none">
             <Img
-              src={`/art/work/${proj.id}/${proj.cover || proj.images[0]}`}
+              src={asset(`/art/work/${proj.id}/${proj.cover || proj.images[0]}`)}
               alt={proj.title}
             />
           </div>
@@ -277,7 +278,7 @@ export default function Home({ content, navigate }) {
           </a>
           {resume && (
             <a
-              href={resume}
+              href={asset(resume)}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full px-6 py-3 text-sm border border-ink/20 transition-all duration-300 hover:border-accent hover:text-accent hover:-translate-y-0.5"
@@ -323,7 +324,7 @@ export default function Home({ content, navigate }) {
               />
               <div className="aspect-[4/5] overflow-hidden rounded-xl">
                 <Img
-                  src={`/art/work/${proj.id}/${proj.cover || proj.images[0]}`}
+                  src={asset(`/art/work/${proj.id}/${proj.cover || proj.images[0]}`)}
                   alt={proj.title}
                 />
               </div>

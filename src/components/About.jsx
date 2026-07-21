@@ -1,4 +1,5 @@
 import Img from './Img'
+import asset from '../asset.js'
 
 export default function About({ content }) {
   const { name, about, resume } = content
@@ -9,7 +10,7 @@ export default function About({ content }) {
       {/* Portrait */}
       <div className="aspect-[4/5] overflow-hidden rounded-2xl max-w-sm">
         <Img
-          src={about.portrait || '/art/portrait.jpg'}
+          src={asset(about.portrait || '/art/portrait.jpg')}
           alt={`Portrait of ${name}`}
         />
       </div>
@@ -26,7 +27,7 @@ export default function About({ content }) {
 
         {resume && (
           <a
-            href={resume}
+            href={asset(resume)}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-3 rounded-full px-6 py-2.5 text-sm border border-ink/20 transition-all duration-300 hover:border-accent hover:text-accent hover:-translate-y-0.5"

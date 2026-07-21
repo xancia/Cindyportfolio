@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Img from './Img'
+import asset from '../asset.js'
 
 export default function Work({ content }) {
   const { projects } = content
@@ -42,7 +43,7 @@ export default function Work({ content }) {
           >
             <div className="aspect-[4/5] overflow-hidden rounded-xl">
               <Img
-                src={`/art/work/${proj.id}/${proj.cover || proj.images[0]}`}
+                src={asset(`/art/work/${proj.id}/${proj.cover || proj.images[0]}`)}
                 alt={proj.title}
                 className="transition-transform duration-700 ease-[cubic-bezier(.2,.7,.3,1)] group-hover:scale-[1.04]"
               />

@@ -106,6 +106,28 @@ Everything else is in `src/content.js` too:
 
 ---
 
+## Publishing changes — it's automatic!
+
+The site lives at **https://xancia.github.io/Cindyportfolio/**
+
+Whenever a change lands on GitHub, the site rebuilds and goes live by itself
+a minute or two later. No build steps, no uploading. You have two easy ways
+to make changes:
+
+**Right in your browser (easiest)** — go to
+[github.com/xancia/Cindyportfolio](https://github.com/xancia/Cindyportfolio):
+
+- To edit text: open `src/content.js`, click the pencil icon, make your
+  change, and press **Commit changes**.
+- To add images: navigate into `public/art/work/`, then **Add file →
+  Upload files** and drag your new project folder's images in.
+
+**Or on your computer** — edit the files, then commit & push (GitHub
+Desktop is the friendliest way to do this).
+
+Either way, check the **Actions** tab on GitHub if you're curious — you'll
+see your update building, and a green checkmark when it's live.
+
 ## Previewing the site locally
 
 If you want to see changes before publishing, open a terminal in this folder and run:
@@ -114,14 +136,4 @@ If you want to see changes before publishing, open a terminal in this folder and
 npm run dev
 ```
 
-Then open the link it shows (usually `http://localhost:5173`) in your browser. Stop it with `Ctrl + C`.
-
-## Publishing changes
-
-When you're ready to go live:
-
-```
-npm run build
-```
-
-This creates a `dist/` folder. Upload the contents of that folder to your hosting provider (Netlify, Vercel, etc.).
+Then open the link it shows (usually `http://localhost:5173/Cindyportfolio/`) in your browser. Stop it with `Ctrl + C`.
