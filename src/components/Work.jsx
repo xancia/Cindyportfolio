@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Img from './Img'
 
-export default function Work({ content, navigate }) {
+export default function Work({ content }) {
   const { projects } = content
   const tags = ['All', ...[...new Set(projects.map(p => p.tag))]]
   const [filter, setFilter] = useState('All')
@@ -35,10 +35,10 @@ export default function Work({ content, navigate }) {
       {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {filtered.map(proj => (
-          <div
+          <a
             key={proj.id}
-            className="group cursor-pointer"
-            onClick={() => navigate('project', proj)}
+            href={`#/project/${proj.id}`}
+            className="group cursor-pointer block"
           >
             <div className="aspect-[4/5] overflow-hidden rounded-xl">
               <Img
@@ -53,7 +53,7 @@ export default function Work({ content, navigate }) {
               </span>
               <span className="text-[10px] text-ink/50 tracking-[0.06em]">{proj.tag} · {proj.year}</span>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

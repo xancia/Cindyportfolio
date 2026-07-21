@@ -58,7 +58,7 @@ const content = {
 
   // Short line at the top of the contact page
   contactTagline:
-    "Currently booking editorial & commercial commissions for 2025.",
+    "Currently booking editorial & commercial commissions.",
 
   // ─── YOUR CONTACT LINKS ───────────────────────────────────────
   //

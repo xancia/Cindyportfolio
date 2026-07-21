@@ -147,18 +147,29 @@ function FloatingCard({ proj, slot, index, onOpen }) {
     if (!moved) onOpen();
   }
 
+  function onKeyDown(e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      onOpen();
+    }
+  }
+
   return (
     <div
       className={`absolute hidden lg:block ${slot.w} ${dragging ? "z-30" : "z-10 animate-floaty"}`}
       style={{ ...slot.pos, animationDelay: slot.delay }}
     >
       <div
-        className="touch-none"
+        role="button"
+        tabIndex={0}
+        aria-label={`Open project: ${proj.title}`}
+        className="touch-none rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
         style={{ transform: `translate(${offset.x}px, ${offset.y}px)` }}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={onPointerUp}
+        onKeyDown={onKeyDown}
       >
         <div
           className={`group relative p-2.5 pb-2 rounded-2xl shadow-[0_8px_22px_rgba(43,36,29,0.08)] select-none ${
@@ -252,18 +263,18 @@ export default function Home({ content, navigate }) {
 
         {/* Main actions */}
         <div className="pointer-events-auto mt-9 flex flex-wrap justify-center items-center gap-3">
-          <button
-            onClick={() => navigate("work")}
+          <a
+            href="#/work"
             className="bg-ink text-paper rounded-full px-7 py-3 text-sm font-medium cursor-pointer transition-all duration-300 hover:bg-accent hover:-translate-y-0.5"
           >
             see all my work →
-          </button>
-          <button
-            onClick={() => navigate("about")}
+          </a>
+          <a
+            href="#/about"
             className="rounded-full px-6 py-3 text-sm border border-ink/20 cursor-pointer transition-all duration-300 hover:border-accent hover:text-accent hover:-translate-y-0.5"
           >
             about me
-          </button>
+          </a>
           {resume && (
             <a
               href={resume}
@@ -298,13 +309,13 @@ export default function Home({ content, navigate }) {
       {featured.length > 0 && (
         <div className="lg:hidden px-6 pb-12 grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-2xl mx-auto w-full">
           {featured.map((proj, i) => (
-            <div
+            <a
               key={proj.id}
-              className={`relative p-2 pb-1.5 rounded-2xl shadow-[0_5px_14px_rgba(43,36,29,0.08)] cursor-pointer transition-transform duration-300 hover:rotate-0 hover:scale-[1.03] ${
+              href={`#/project/${proj.id}`}
+              className={`relative block p-2 pb-1.5 rounded-2xl shadow-[0_5px_14px_rgba(43,36,29,0.08)] cursor-pointer transition-transform duration-300 hover:rotate-0 hover:scale-[1.03] ${
                 i % 2 === 0 ? "rotate-[1.5deg]" : "rotate-[-1.5deg]"
               }`}
               style={{ background: PASTELS[i % PASTELS.length] }}
-              onClick={() => navigate("project", proj)}
             >
               <div
                 className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-10 h-3 rounded-[2px] rotate-[-3deg] opacity-80"
@@ -319,7 +330,7 @@ export default function Home({ content, navigate }) {
               <div className="pt-1.5 px-1 text-[10px] font-medium truncate">
                 {proj.title}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       )}

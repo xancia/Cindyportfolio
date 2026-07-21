@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function Img({ src, alt, className = '' }) {
+export default function Img({ src, alt, className = '', eager = false }) {
   const [failed, setFailed] = useState(false)
 
   if (failed) {
@@ -16,6 +16,8 @@ export default function Img({ src, alt, className = '' }) {
       src={src}
       alt={alt || ''}
       onError={() => setFailed(true)}
+      loading={eager ? 'eager' : 'lazy'}
+      decoding="async"
       className={`w-full h-full object-cover ${className}`}
     />
   )

@@ -49,6 +49,9 @@ Open `src/content.js` and find the `projects` list. Copy an existing project blo
 
 **Step 4 — Save the file.** That's it!
 
+**Bonus:** every project gets its own link you can share directly, e.g.
+`yoursite.com/#/project/my-new-project` — handy for sending one piece to a client.
+
 ---
 
 ## The home page

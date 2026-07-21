@@ -1,7 +1,12 @@
+import content from '../content.js'
 import Img from './Img'
 
-export default function Project({ project: proj, navigate, openLightbox }) {
+export default function Project({ project: proj, openLightbox }) {
   const images = (proj.images || []).map(f => `/art/work/${proj.id}/${f}`)
+
+  const idx = content.projects.findIndex(p => p.id === proj.id)
+  const prevProj = content.projects[idx - 1]
+  const nextProj = content.projects[idx + 1]
 
   function open(idx) {
     openLightbox({ images, index: idx })
@@ -10,12 +15,12 @@ export default function Project({ project: proj, navigate, openLightbox }) {
   return (
     <div className="px-6 sm:px-9 pt-5 pb-16 max-w-6xl mx-auto">
       {/* Back */}
-      <button
-        onClick={() => navigate('work')}
+      <a
+        href="#/work"
         className="text-xs text-ink/55 hover:text-accent transition-colors duration-200 mb-6 inline-block cursor-pointer"
       >
         ← back to all work
-      </button>
+      </a>
 
       {/* Header */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 mb-8 items-end">
@@ -40,7 +45,7 @@ export default function Project({ project: proj, navigate, openLightbox }) {
           className="aspect-[4/3] overflow-hidden rounded-xl mb-4 cursor-pointer"
           onClick={() => open(0)}
         >
-          <Img src={images[0]} alt={proj.title} className="hover:scale-[1.02] transition-transform duration-700 ease-[cubic-bezier(.2,.7,.3,1)]" />
+          <Img src={images[0]} alt={proj.title} eager className="hover:scale-[1.02] transition-transform duration-700 ease-[cubic-bezier(.2,.7,.3,1)]" />
         </div>
       )}
 
@@ -81,6 +86,24 @@ export default function Project({ project: proj, navigate, openLightbox }) {
               <Img src={src} alt={`${proj.title} ${i + 5}`} className="hover:scale-[1.02] transition-transform duration-700 ease-[cubic-bezier(.2,.7,.3,1)]" />
             </div>
           ))}
+        </div>
+      )}
+
+      {/* Previous / next project */}
+      {(prevProj || nextProj) && (
+        <div className="mt-14 pt-6 border-t border-ink/10 flex justify-between items-baseline gap-6 text-sm">
+          {prevProj ? (
+            <a href={`#/project/${prevProj.id}`} className="group max-w-[45%]">
+              <span className="block text-[10px] tracking-[0.14em] uppercase text-ink/40 mb-1">← previous</span>
+              <span className="font-medium transition-colors duration-200 group-hover:text-accent">{prevProj.title}</span>
+            </a>
+          ) : <span />}
+          {nextProj && (
+            <a href={`#/project/${nextProj.id}`} className="group max-w-[45%] text-right">
+              <span className="block text-[10px] tracking-[0.14em] uppercase text-ink/40 mb-1">next →</span>
+              <span className="font-medium transition-colors duration-200 group-hover:text-accent">{nextProj.title}</span>
+            </a>
+          )}
         </div>
       )}
     </div>
