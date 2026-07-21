@@ -50,7 +50,7 @@ Open `src/content.js` and find the `projects` list. Copy an existing project blo
 **Step 4 — Save the file.** That's it!
 
 **Bonus:** every project gets its own link you can share directly, e.g.
-`yoursite.com/#/project/my-new-project` — handy for sending one piece to a client.
+`cindyarts.com/#/project/my-new-project` — handy for sending one piece to a client.
 
 ---
 
@@ -108,7 +108,7 @@ Everything else is in `src/content.js` too:
 
 ## Publishing changes — it's automatic!
 
-The site lives at **https://xancia.github.io/Cindyportfolio/**
+The site lives at **https://cindyarts.com**
 
 Whenever a change lands on GitHub, the site rebuilds and goes live by itself
 a minute or two later. No build steps, no uploading. You have two easy ways
@@ -136,4 +136,4 @@ If you want to see changes before publishing, open a terminal in this folder and
 npm run dev
 ```
 
-Then open the link it shows (usually `http://localhost:5173/Cindyportfolio/`) in your browser. Stop it with `Ctrl + C`.
+Then open the link it shows (usually `http://localhost:5173`) in your browser. Stop it with `Ctrl + C`.
