@@ -145,12 +145,12 @@ const content = {
 
     {
       id: "mark-making",
-      title: "Placeholder",
+      title: "Sweet Delights",
       tag: "Typography",
-      year: 2023,
+      year: 2025,
       description: "Typographic exploration and hand-lettering experiments.",
-      images: ["01.jpg", "02.jpg", "03.jpg"],
-      cover: "01.jpg",
+      images: ["sweet-delights.jpg"],
+      cover: "sweet-delights.jpg",
       featured: true,
     },
 
