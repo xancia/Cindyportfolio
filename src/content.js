@@ -85,7 +85,7 @@ const content = {
     ],
 
     education: "Bachelors Illustration, RMCAD 2026",
-    recognition: "3×3 Illustration Annual, Honorable Mention — 2024",
+    recognition: "Illustration with Honorable Mention, 2026",
 
     // List up to 8 clients — they appear in a two-column grid
     clients: [
