@@ -131,7 +131,7 @@ const content = {
 
     {
       id: "the-visitor",
-      title: "Placeholder",
+      title: "Sato Kazuki",
       tag: "Character",
       year: 2024,
       description:
