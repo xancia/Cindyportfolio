@@ -41,7 +41,7 @@ export default function Work({ content }) {
             href={`#/project/${proj.id}`}
             className="group cursor-pointer block"
           >
-            <div className="aspect-[4/5] overflow-hidden rounded-xl">
+            <div className={`${proj.orientation === 'landscape' ? 'aspect-[16/9]' : 'aspect-[4/5]'} overflow-hidden rounded-xl`}>
               <Img
                 src={asset(`/art/work/${proj.id}/${proj.cover || proj.images[0]}`)}
                 alt={proj.title}

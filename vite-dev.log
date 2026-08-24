@@ -7,3 +7,6 @@
 
   ➜  Local:   http://127.0.0.1:5173/
 12:25:37 PM [vite] (client) hmr update /src/App.jsx, /src/index.css, /src/components/Project.jsx
+12:28:56 PM [vite] (client) hmr update /src/App.jsx, /src/index.css, /src/components/Project.jsx
+12:28:56 PM [vite] (client) hmr update /src/components/Work.jsx, /src/index.css
+12:32:43 PM [vite] (client) hmr update /src/App.jsx, /src/index.css, /src/components/Project.jsx

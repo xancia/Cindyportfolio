@@ -188,13 +188,25 @@ const content = {
 
     {
       id: "soft-index",
+      title: "Rapunzal Book Design",
+      tag: "Typography",
+      year: 2025,
+      description: "Typographic print series — risograph edition.",
+      images: ["rapunzal-book-design.jpg"],
+      cover: "rapunzal-book-design.jpg",
+      orientation: "landscape",
+      // no "featured" → not on the home page, still on the Work page
+    },
+
+    {
+      id: "typography-placeholder",
       title: "Placeholder",
       tag: "Typography",
-      year: 2023,
-      description: "Typographic print series — risograph edition.",
-      images: ["01.jpg", "02.jpg"],
+      year: 2026,
+      description: "A placeholder for a future typography project.",
+      images: ["01.jpg"],
       cover: "01.jpg",
-      // no "featured" → not on the home page, still on the Work page
+      orientation: "landscape",
     },
 
     {
