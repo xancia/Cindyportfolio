@@ -178,12 +178,12 @@ const content = {
 
     {
       id: "character-placeholder",
-      title: "Placeholder",
+      title: "Eros",
       tag: "Character",
-      year: 2026,
+      year: 2025,
       description: "A placeholder for a future character project.",
-      images: ["01.jpg"],
-      cover: "01.jpg",
+      images: ["eros-2.jpg"],
+      cover: "eros-2.jpg",
     },
 
     {
