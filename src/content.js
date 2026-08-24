@@ -54,7 +54,7 @@ const content = {
 
   // Link to your resume — drop the file at public/resume.pdf
   // Set to null to hide the resume buttons.
-  resume: "/resume.pdf",
+  resume: "/resume-cindy-ma.pdf",
 
   // Short line at the top of the contact page
   contactTagline:
@@ -66,7 +66,7 @@ const content = {
   //  Set any field to null to hide it.
   //
   contact: {
-    email: "hello@cindyma.com",
+    email: "cindyma8578@gmail.com",
     instagram: "@cindyma", // your Instagram handle (with the @)
     arena: "/cindy-ma", // your Are.na channel path, e.g. "/cindy-ma"
     linkedin: null, // e.g. "/in/cindy-ma" — set to null to hide
