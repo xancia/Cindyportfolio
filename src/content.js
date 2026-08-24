@@ -79,8 +79,7 @@ const content = {
 
     // Write as many paragraphs as you like
     bio: [
-      "Write your intro paragraph here. Tell people who you are, what you make, and where you're based.",
-      "Add a second paragraph here — your education, recent awards, what you're excited about right now.",
+      "Hello my name is Cindy Ma a graduate from Rocky Mountain College of Art & Design",
     ],
 
     education: "BFA Illustration, RISD — 2024",
