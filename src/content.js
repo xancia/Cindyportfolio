@@ -136,8 +136,8 @@ const content = {
       year: 2024,
       description:
         "Character design series for an independent publishing project.",
-      images: ["01.jpg", "02.jpg", "03.jpg"],
-      cover: "01.jpg",
+      images: ["sato-kazuki-2.0.jpg"],
+      cover: "sato-kazuki-2.0.jpg",
       featured: true,
     },
 
