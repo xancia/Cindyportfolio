@@ -67,7 +67,7 @@ const content = {
   //
   contact: {
     email: "cindyma8578@gmail.com",
-    instagram: "@cindyma", // your Instagram handle (with the @)
+    instagram: "@xxcynthiarts", // your Instagram handle (with the @)
     arena: "/cindy-ma", // your Are.na channel path, e.g. "/cindy-ma"
     linkedin: null, // e.g. "/in/cindy-ma" — set to null to hide
   },
