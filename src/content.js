@@ -110,7 +110,7 @@ const content = {
       // Example: public/art/work/quiet-hours/
       id: "quiet-hours",
       title: "Placeholder",
-      tag: "Editorial", // used for the filter buttons on Work page
+      tag: "Rendering", // used for the filter buttons on Work page
       year: 2024,
       description:
         "A short description of this project. One or two sentences about the brief, medium, or concept.",
@@ -157,7 +157,7 @@ const content = {
     {
       id: "long-walks",
       title: "Placeholder",
-      tag: "Editorial",
+      tag: "Rendering",
       year: 2023,
       description: "Editorial illustration series for a travel publication.",
       images: ["01.jpg", "02.jpg"],
