@@ -5,7 +5,8 @@ export default function Contact({ content }) {
     contact.email     && ['email',     contact.email,     `mailto:${contact.email}`],
     contact.instagram && ['instagram', contact.instagram,
       `https://instagram.com/${contact.instagram.replace('@', '')}`],
-    contact.arena     && ['are.na',    contact.arena,     `https://are.na${contact.arena}`],
+    contact.pinterest && ['pinterest', contact.pinterest,
+      `https://pinterest.com/${contact.pinterest.replace('@', '')}`],
     contact.linkedin  && ['linkedin',  contact.linkedin,  `https://linkedin.com${contact.linkedin}`],
   ].filter(Boolean)
 

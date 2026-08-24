@@ -220,7 +220,10 @@ export default function Home({ content, navigate }) {
       "instagram",
       `https://instagram.com/${contact.instagram.replace("@", "")}`,
     ],
-    contact.arena && ["are.na", `https://are.na${contact.arena}`],
+    contact.pinterest && [
+      "pinterest",
+      `https://pinterest.com/${contact.pinterest.replace("@", "")}`,
+    ],
     contact.linkedin && ["linkedin", `https://linkedin.com${contact.linkedin}`],
   ].filter(Boolean);
 
