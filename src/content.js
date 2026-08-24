@@ -109,13 +109,13 @@ const content = {
       // "id" must match the folder name inside public/art/work/
       // Example: public/art/work/quiet-hours/
       id: "quiet-hours",
-      title: "Placeholder",
+      title: "Underwater Fairytale",
       tag: "Rendering", // used for the filter buttons on Work page
-      year: 2024,
+      year: 2025,
       description:
         "A short description of this project. One or two sentences about the brief, medium, or concept.",
-      images: ["01.jpg", "02.jpg", "03.jpg", "04.jpg"],
-      cover: "01.jpg", // thumbnail on Work and Home pages
+      images: ["underwater-fairytale-1.jpg"],
+      cover: "underwater-fairytale-1.jpg", // thumbnail on Work and Home pages
       featured: true, // shows as a floating card on the home page
     },
 
