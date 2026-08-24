@@ -75,7 +75,7 @@ const content = {
   // ─── ABOUT PAGE ───────────────────────────────────────────────
   about: {
     // Drop your portrait photo at:  public/art/portrait.jpg
-    portrait: "/art/portrait.jpg",
+    portrait: "/art/charlotte-headshot.jpg",
 
     // Write as many paragraphs as you like
     bio: [
