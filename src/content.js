@@ -135,7 +135,7 @@ const content = {
       id: "the-visitor",
       title: "Sato Kazuki",
       tag: "Character",
-      year: 2024,
+      year: 2026,
       description:
         "Character design series for an independent publishing project.",
       images: ["sato-kazuki-2.0.jpg"],
