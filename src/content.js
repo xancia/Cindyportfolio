@@ -113,7 +113,7 @@ const content = {
       tag: "Rendering", // used for the filter buttons on Work page
       year: 2025,
       description:
-        "A short description of this project. One or two sentences about the brief, medium, or concept.",
+        "a narrative illustration of an abstracted sea background using several texure brushes and filters",
       images: ["underwater-fairytale-1.jpg"],
       cover: "underwater-fairytale-1.jpg", // thumbnail on Work and Home pages
       featured: true, // shows as a floating card on the home page
