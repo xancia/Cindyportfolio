@@ -3,7 +3,6 @@ import asset from '../asset.js'
 
 export default function About({ content }) {
   const { name, about, resume } = content
-  const firstName = name.split(' ')[0]
 
   return (
     <div className="px-6 sm:px-9 py-8 pb-16 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-8 md:gap-12">
@@ -18,7 +17,8 @@ export default function About({ content }) {
       {/* Content */}
       <div>
         <h2 className="font-display font-bold text-4xl sm:text-5xl tracking-[-0.02em] mb-6">
-          hello — I&apos;m {firstName}.
+          Artist Bio<br />
+          ₊˚ ✧ ‿︵‿୨୧‿︵‿ ✧ ₊˚
         </h2>
 
         {(about.bio || []).map((para, i) => (

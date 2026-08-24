@@ -79,7 +79,9 @@ const content = {
 
     // Write as many paragraphs as you like
     bio: [
-      "Hello my name is Cindy Ma a graduate from Rocky Mountain College of Art & Design",
+      "I'm a digital artist who has been drawing since I was a child, from the age of 10. However, I've rediscovered my love for art about five years ago and been creating ever since. I was a student at Rocky Mountain College of Art & Design, majoring in Illustration. I primarily work digitally using a program called Clip Studio Paint and an XP-Pen tablet, where I bring my ideas to life through expressive character designs and detailed concept art.",
+      "In recent years, I developed a growing interest in book jacket illustration and design, exploring the creative relationship between typography, lettering, and visual storytelling. My works reflects a thoughtful balance between aesthetic composition and emotional narrative.",
+      "Born and raised in a Vietnamese household that values hard work and perseverance, I carry those same principles into my artistic journey. Family remains close to my heart, as it continues to inspire my work through that emotional connection.",
     ],
 
     education: "Bachelors Illustration, RMCAD 2026",
