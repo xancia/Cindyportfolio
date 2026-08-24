@@ -11,4 +11,12 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    // OneDrive can briefly lock large artwork files while syncing. Public
+    // assets are served directly, so watching them is unnecessary and can
+    // crash Vite with EBUSY on Windows.
+    watch: {
+      ignored: ['**/public/art/**'],
+    },
+  },
 })
