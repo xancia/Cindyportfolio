@@ -168,7 +168,7 @@ const content = {
     {
       id: "ghost-town",
       title: "Placeholder",
-      tag: "Concept",
+      tag: "Character",
       year: 2023,
       description: "Concept and worldbuilding work for an indie game project.",
       images: ["01.jpg", "02.jpg", "03.jpg"],
