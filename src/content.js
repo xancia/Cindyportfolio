@@ -82,7 +82,7 @@ const content = {
       "Hello my name is Cindy Ma a graduate from Rocky Mountain College of Art & Design",
     ],
 
-    education: "BFA Illustration, RISD — 2024",
+    education: "Bachelors Illustration, RMCAD 2026",
     recognition: "3×3 Illustration Annual, Honorable Mention — 2024",
 
     // List up to 8 clients — they appear in a two-column grid
