@@ -200,12 +200,12 @@ const content = {
 
     {
       id: "typography-placeholder",
-      title: "Placeholder",
+      title: "Cinderella Book Design",
       tag: "Typography",
-      year: 2026,
+      year: 2025,
       description: "A placeholder for a future typography project.",
-      images: ["01.jpg"],
-      cover: "01.jpg",
+      images: ["cinderella-book-design.jpg"],
+      cover: "cinderella-book-design.jpg",
       orientation: "landscape",
     },
 
