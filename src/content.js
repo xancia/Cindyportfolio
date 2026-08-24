@@ -177,6 +177,16 @@ const content = {
     },
 
     {
+      id: "character-placeholder",
+      title: "Placeholder",
+      tag: "Character",
+      year: 2026,
+      description: "A placeholder for a future character project.",
+      images: ["01.jpg"],
+      cover: "01.jpg",
+    },
+
+    {
       id: "soft-index",
       title: "Placeholder",
       tag: "Typography",
