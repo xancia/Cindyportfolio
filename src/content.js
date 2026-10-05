@@ -221,6 +221,17 @@ const content = {
     },
 
     {
+      id: "rapunzel-book-mock-up",
+      title: "Rapunzel Mock Up",
+      tag: "Typography",
+      year: 2025,
+      description: "Typographic exploration and designing experiments",
+      images: ["rapunzel-book-mock-up.jpg"],
+      cover: "rapunzel-book-mock-up.jpg",
+      orientation: "landscape",
+    },
+
+    {
       id: "garden-state",
       title: "Placeholder",
       tag: "Personal",
