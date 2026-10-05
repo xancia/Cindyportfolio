@@ -192,8 +192,8 @@ const content = {
       tag: "Typography",
       year: 2025,
       description: "Typographic exploration and designing experiments",
-      images: ["rapunzal-book-design.jpg"],
-      cover: "rapunzal-book-design.jpg",
+      images: ["rapunzel-book-cover-mockup.png"],
+      cover: "rapunzel-book-cover-mockup.png",
       orientation: "landscape",
       // no "featured" → not on the home page, still on the Work page
     },
