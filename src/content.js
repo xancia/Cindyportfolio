@@ -210,6 +210,17 @@ const content = {
     },
 
     {
+      id: "typography-placeholder-2",
+      title: "Placeholder",
+      tag: "Typography",
+      year: 2025,
+      description: "Typographic exploration and designing experiments",
+      images: ["01.jpg"],
+      cover: "01.jpg",
+      orientation: "landscape",
+    },
+
+    {
       id: "garden-state",
       title: "Placeholder",
       tag: "Personal",
