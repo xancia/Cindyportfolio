@@ -188,7 +188,7 @@ const content = {
 
     {
       id: "soft-index",
-      title: "Rapunzal Book Design",
+      title: "Cinderella Mock Up",
       tag: "Typography",
       year: 2025,
       description: "Typographic exploration and designing experiments",
