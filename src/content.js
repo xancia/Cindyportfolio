@@ -242,6 +242,17 @@ const content = {
     },
 
     {
+      id: "snow-white-book-design",
+      title: "Snow White Book Design",
+      tag: "Typography",
+      year: 2025,
+      description: "Book cover design for Snow White.",
+      images: ["snow-white-book-design.jpg"],
+      cover: "snow-white-book-design.jpg",
+      orientation: "landscape",
+    },
+
+    {
       id: "garden-state",
       title: "Placeholder",
       tag: "Personal",
