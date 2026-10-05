@@ -215,8 +215,8 @@ const content = {
       tag: "Typography",
       year: 2025,
       description: "Typographic exploration and designing experiments",
-      images: ["01.jpg"],
-      cover: "01.jpg",
+      images: ["book-jacket-cover.png"],
+      cover: "book-jacket-cover.png",
       orientation: "landscape",
     },
 
