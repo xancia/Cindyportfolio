@@ -211,10 +211,10 @@ const content = {
 
     {
       id: "typography-placeholder-2",
-      title: "Rapunzal_Book_Design",
+      title: "Rapunzal Book Design",
       tag: "Typography",
       year: 2025,
-      description: "Typographic exploration and designing experiments",
+      description: "book design for Rapunzel",
       images: ["Rapunzal_Book_Design.jpg"],
       cover: "Rapunzal_Book_Design.jpg",
       orientation: "landscape",
