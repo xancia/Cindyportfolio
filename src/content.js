@@ -187,6 +187,17 @@ const content = {
     },
 
     {
+      id: "typography-placeholder",
+      title: "Cinderella Book Design",
+      tag: "Typography",
+      year: 2025,
+      description: "Typographic exploration and designing experiments",
+      images: ["cinderella-book-design.jpg"],
+      cover: "cinderella-book-design.jpg",
+      orientation: "landscape",
+    },
+
+    {
       id: "soft-index",
       title: "Cinderella Mock Up",
       tag: "Typography",
@@ -196,17 +207,6 @@ const content = {
       cover: "rapunzel-book-cover-mockup.png",
       orientation: "landscape",
       // no "featured" → not on the home page, still on the Work page
-    },
-
-    {
-      id: "typography-placeholder",
-      title: "Cinderella Book Design",
-      tag: "Typography",
-      year: 2025,
-      description: "Typographic exploration and designing experiments",
-      images: ["cinderella-book-design.jpg"],
-      cover: "cinderella-book-design.jpg",
-      orientation: "landscape",
     },
 
     {
