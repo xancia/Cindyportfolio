@@ -34,12 +34,17 @@ export default function Work({ content }) {
       </div>
 
       {/* Grid */}
-      <div className="columns-1 sm:columns-2 lg:columns-3 gap-5">
-        {filtered.map(proj => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-flow-row-dense gap-5 [grid-auto-rows:4px]">
+        {filtered.map(proj => {
+          const cardRows = proj.orientation === 'landscape'
+            ? 'row-span-[10] sm:row-span-[9] lg:row-span-[11]'
+            : 'row-span-[20] sm:row-span-[17] lg:row-span-[21]'
+
+          return (
           <a
             key={proj.id}
             href={`#/project/${proj.id}`}
-            className="group cursor-pointer mb-5 w-full break-inside-avoid inline-block"
+            className={`group cursor-pointer ${cardRows}`}
           >
             <div className={`${proj.orientation === 'landscape' ? 'aspect-[16/9]' : 'aspect-[4/5]'} overflow-hidden rounded-xl`}>
               <Img
@@ -55,7 +60,8 @@ export default function Work({ content }) {
               <span className="text-[10px] text-ink/50 tracking-[0.06em]">{proj.tag} · {proj.year}</span>
             </div>
           </a>
-        ))}
+          )
+        })}
       </div>
     </div>
   )
