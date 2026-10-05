@@ -232,6 +232,16 @@ const content = {
     },
 
     {
+      id: "little-mermaid-cover",
+      title: "The Little Mermaid Cover",
+      tag: "Typography",
+      year: 2025,
+      description: "Book cover design for The Little Mermaid.",
+      images: ["little-mermaid-cover.jpg"],
+      cover: "little-mermaid-cover.jpg",
+    },
+
+    {
       id: "garden-state",
       title: "Placeholder",
       tag: "Personal",
