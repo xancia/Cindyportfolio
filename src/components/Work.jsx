@@ -34,12 +34,12 @@ export default function Work({ content }) {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-5">
         {filtered.map(proj => (
           <a
             key={proj.id}
             href={`#/project/${proj.id}`}
-            className="group cursor-pointer block"
+            className="group cursor-pointer mb-5 w-full break-inside-avoid inline-block"
           >
             <div className={`${proj.orientation === 'landscape' ? 'aspect-[16/9]' : 'aspect-[4/5]'} overflow-hidden rounded-xl`}>
               <Img
