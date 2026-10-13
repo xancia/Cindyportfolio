@@ -147,6 +147,8 @@ const content = {
         "Character design series for an independent publishing project.",
       images: ["sato-kazuki-2.0.jpg"],
       cover: "sato-kazuki-2.0.jpg",
+      thumbnailAspect: "7/10",
+      fit: "contain",
       featured: true,
     },
 
@@ -249,6 +251,8 @@ const content = {
       description: "Character design series for an independent publishing project.",
       images: ["charlotte.jpg"],
       cover: "charlotte.jpg",
+      thumbnailAspect: "7/10",
+      fit: "contain",
       featured: true,
     },
 
@@ -260,6 +264,8 @@ const content = {
       description: "Character design series for an independent publishing project.",
       images: ["eros-2.jpg"],
       cover: "eros-2.jpg",
+      thumbnailAspect: "7/10",
+      fit: "contain",
     },
 
     {
