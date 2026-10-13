@@ -48,7 +48,9 @@ export default function Work({ content }) {
           >
             <div className={`${proj.orientation === 'landscape' ? 'aspect-[16/9]' : 'aspect-[4/5]'} overflow-hidden rounded-xl`}>
               <Img
-                src={asset(`/art/work/${proj.id}/${proj.cover || proj.images[0]}`)}
+                src={(proj.cover || proj.images[0]).startsWith('/')
+                  ? (proj.cover || proj.images[0])
+                  : asset(`/art/work/${proj.id}/${proj.cover || proj.images[0]}`)}
                 alt={proj.title}
                 fit={proj.fit}
                 className={proj.fit === 'contain' ? '' : 'transition-transform duration-700 ease-[cubic-bezier(.2,.7,.3,1)] group-hover:scale-[1.04]'}

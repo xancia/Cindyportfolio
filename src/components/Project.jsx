@@ -3,7 +3,7 @@ import Img from './Img'
 import asset from '../asset.js'
 
 export default function Project({ project: proj, openLightbox }) {
-  const images = (proj.images || []).map(f => asset(`/art/work/${proj.id}/${f}`))
+  const images = (proj.images || []).map(f => f.startsWith('/') ? f : asset(`/art/work/${proj.id}/${f}`))
 
   const idx = content.projects.findIndex(p => p.id === proj.id)
   const prevProj = content.projects[idx - 1]
