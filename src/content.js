@@ -156,13 +156,14 @@ const content = {
 
     {
       id: "long-walks",
-      title: "Placeholder",
+      title: "Cold Duo",
       tag: "Rendering",
       year: 2023,
-      description: "Editorial illustration series for a travel publication.",
-      images: ["01.jpg", "02.jpg"],
-      cover: "01.jpg",
+      description: "Character illustration featuring Cold Duo.",
+      images: ["Cold Duo.jpg"],
+      cover: "Cold Duo.jpg",
       featured: true,
+      fit: "contain",
     },
 
     {

@@ -46,7 +46,7 @@ export default function Project({ project: proj, openLightbox }) {
           className={`${proj.orientation === 'landscape' ? 'aspect-video' : 'aspect-[4/3]'} overflow-hidden rounded-xl mb-4 cursor-pointer`}
           onClick={() => open(0)}
         >
-          <Img src={images[0]} alt={proj.title} eager className="hover:scale-[1.02] transition-transform duration-700 ease-[cubic-bezier(.2,.7,.3,1)]" />
+          <Img src={images[0]} alt={proj.title} eager fit={proj.fit} className={proj.fit === 'contain' ? '' : 'hover:scale-[1.02] transition-transform duration-700 ease-[cubic-bezier(.2,.7,.3,1)]'} />
         </div>
       )}
 

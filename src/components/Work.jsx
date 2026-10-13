@@ -50,7 +50,8 @@ export default function Work({ content }) {
               <Img
                 src={asset(`/art/work/${proj.id}/${proj.cover || proj.images[0]}`)}
                 alt={proj.title}
-                className="transition-transform duration-700 ease-[cubic-bezier(.2,.7,.3,1)] group-hover:scale-[1.04]"
+                fit={proj.fit}
+                className={proj.fit === 'contain' ? '' : 'transition-transform duration-700 ease-[cubic-bezier(.2,.7,.3,1)] group-hover:scale-[1.04]'}
               />
             </div>
             <div className="mt-2.5 px-0.5 flex justify-between items-baseline">
