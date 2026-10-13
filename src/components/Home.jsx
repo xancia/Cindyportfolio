@@ -56,6 +56,14 @@ const TAPES = [
   "#f6c6d8",
 ];
 
+function cardPastel(proj, index) {
+  return proj.id === "mark-making" ? "#ead8c0" : PASTELS[index % PASTELS.length];
+}
+
+function cardTape(proj, index) {
+  return proj.id === "mark-making" ? "#c9ad8d" : TAPES[index % TAPES.length];
+}
+
 // Little hand-drawn doodles sprinkled around the hero
 function Doodle({ d, className, style, stroke = false }) {
   return (
@@ -187,13 +195,13 @@ function FloatingCard({ proj, slot, index, onOpen }) {
           }`}
           style={{
             "--rot": `${slot.rot}deg`,
-            background: PASTELS[index % PASTELS.length],
+            background: cardPastel(proj, index),
           }}
         >
           {/* washi tape */}
           <div
             className="absolute -top-2 left-1/2 -translate-x-1/2 w-14 h-4 rounded-[3px] rotate-[-3deg] opacity-80 pointer-events-none"
-            style={{ background: TAPES[index % TAPES.length] }}
+            style={{ background: cardTape(proj, index) }}
           />
           <div className="aspect-[4/5] overflow-hidden rounded-xl pointer-events-none">
             <Img
@@ -332,11 +340,11 @@ export default function Home({ content, navigate }) {
               className={`relative block p-2 pb-1.5 rounded-2xl shadow-[0_5px_14px_rgba(43,36,29,0.08)] cursor-pointer transition-transform duration-300 hover:rotate-0 hover:scale-[1.03] ${
                 i % 2 === 0 ? "rotate-[1.5deg]" : "rotate-[-1.5deg]"
               }`}
-              style={{ background: PASTELS[i % PASTELS.length] }}
+              style={{ background: cardPastel(proj, i) }}
             >
               <div
                 className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-10 h-3 rounded-[2px] rotate-[-3deg] opacity-80"
-                style={{ background: TAPES[i % TAPES.length] }}
+                style={{ background: cardTape(proj, i) }}
               />
               <div className="aspect-[4/5] overflow-hidden rounded-xl">
                 <Img
