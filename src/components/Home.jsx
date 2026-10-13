@@ -237,6 +237,9 @@ export default function Home({ content, navigate }) {
   const sweetDelights = content.projects.find((p) => p.id === "mark-making");
   const takaruSlot = featured.findIndex((p) => p.id === "takaru");
   if (takaruSlot !== -1 && sweetDelights) featured[takaruSlot] = sweetDelights;
+  const littleMermaid = content.projects.find((p) => p.id === "little-mermaid-cover");
+  const placeholderSlot = featured.findIndex((p) => p.id === "field-notes");
+  if (placeholderSlot !== -1 && littleMermaid) featured[placeholderSlot] = littleMermaid;
   const kukiDuo = content.projects.find((p) => p.id === "kuki-duo");
   const hikaruSlot = featured.findIndex((p) => p.id === "hikaru");
   if (hikaruSlot !== -1 && kukiDuo) featured[hikaruSlot] = kukiDuo;

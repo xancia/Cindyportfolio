@@ -4,6 +4,7 @@ import teaParty from "./assets/tea-party.jpg";
 import takaru from "./assets/takaru.jpg";
 import sumire from "./assets/sumire.jpg";
 import hikaru from "./assets/hikaru.jpg";
+import littleMermaidCover from "./assets/little-mermaid-cover.jpg";
 
 // ================================================================
 //  CINDY MA PORTFOLIO — SITE CONTENT
@@ -319,8 +320,8 @@ const content = {
       tag: "Typography",
       year: 2025,
       description: "Book cover design for The Little Mermaid.",
-      images: ["little-mermaid-cover.jpg"],
-      cover: "little-mermaid-cover.jpg",
+      images: [littleMermaidCover],
+      cover: littleMermaidCover,
     },
 
     {
