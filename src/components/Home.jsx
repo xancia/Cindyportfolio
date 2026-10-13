@@ -220,6 +220,12 @@ export default function Home({ content, navigate }) {
   const featured = content.projects
     .filter((p) => p.featured)
     .slice(0, SLOTS.length);
+  const sweetDelights = content.projects.find((p) => p.id === "mark-making");
+  const takaruSlot = featured.findIndex((p) => p.id === "takaru");
+  if (takaruSlot !== -1 && sweetDelights) featured[takaruSlot] = sweetDelights;
+  const kukiDuo = content.projects.find((p) => p.id === "kuki-duo");
+  const hikaruSlot = featured.findIndex((p) => p.id === "hikaru");
+  if (hikaruSlot !== -1 && kukiDuo) featured[hikaruSlot] = kukiDuo;
 
   const socials = [
     contact.email && ["email", `mailto:${contact.email}`],
