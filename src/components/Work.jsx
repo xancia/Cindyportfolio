@@ -45,9 +45,11 @@ export default function Work({ content }) {
             ? 'aspect-[3/2]'
             : proj.thumbnailAspect === '1/1'
               ? 'aspect-square'
-              : proj.orientation === 'landscape'
-                ? 'aspect-[16/9]'
-                : 'aspect-[4/5]'
+              : proj.thumbnailAspect === '7/10'
+                ? 'aspect-[7/10]'
+                : proj.orientation === 'landscape'
+                  ? 'aspect-[16/9]'
+                  : 'aspect-[4/5]'
 
           return (
           <a

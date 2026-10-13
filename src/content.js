@@ -1,6 +1,9 @@
 import coldDuo from "./assets/cold-duo.jpg";
 import kukiDuo from "./assets/kuki-duo.jpg";
 import teaParty from "./assets/tea-party.jpg";
+import takaru from "./assets/takaru.jpg";
+import sumire from "./assets/sumire.jpg";
+import hikaru from "./assets/hikaru.jpg";
 
 // ================================================================
 //  CINDY MA PORTFOLIO — SITE CONTENT
@@ -144,6 +147,45 @@ const content = {
         "Character design series for an independent publishing project.",
       images: ["sato-kazuki-2.0.jpg"],
       cover: "sato-kazuki-2.0.jpg",
+      featured: true,
+    },
+
+    {
+      id: "takaru",
+      title: "Takaru",
+      tag: "Character",
+      year: 2026,
+      description: "Character design for Takaru.",
+      images: [takaru],
+      cover: takaru,
+      thumbnailAspect: "7/10",
+      fit: "contain",
+      featured: true,
+    },
+
+    {
+      id: "sumire",
+      title: "Sumire",
+      tag: "Character",
+      year: 2026,
+      description: "Character design for Sumire.",
+      images: [sumire],
+      cover: sumire,
+      thumbnailAspect: "7/10",
+      fit: "contain",
+      featured: true,
+    },
+
+    {
+      id: "hikaru",
+      title: "Hikaru",
+      tag: "Character",
+      year: 2026,
+      description: "Character design for Hikaru.",
+      images: [hikaru],
+      cover: hikaru,
+      thumbnailAspect: "7/10",
+      fit: "contain",
       featured: true,
     },
 
