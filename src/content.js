@@ -1,5 +1,6 @@
 import coldDuo from "./assets/cold-duo.jpg";
 import kukiDuo from "./assets/kuki-duo.jpg";
+import teaParty from "./assets/tea-party.jpg";
 
 // ================================================================
 //  CINDY MA PORTFOLIO — SITE CONTENT
@@ -177,6 +178,18 @@ const content = {
       description: "Character illustration featuring Kuki Duo.",
       images: [kukiDuo],
       cover: kukiDuo,
+      featured: true,
+      fit: "contain",
+    },
+
+    {
+      id: "tea-party",
+      title: "Tea Party",
+      tag: "Rendering",
+      year: 2025,
+      description: "Collaborative OC game card illustration.",
+      images: [teaParty],
+      cover: teaParty,
       featured: true,
       fit: "contain",
     },
