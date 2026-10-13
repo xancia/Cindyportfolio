@@ -57,11 +57,15 @@ const TAPES = [
 ];
 
 function cardPastel(proj, index) {
-  return proj.id === "mark-making" ? "#ead8c0" : PASTELS[index % PASTELS.length];
+  if (proj.id === "mark-making") return "#ead8c0";
+  if (proj.id === "the-visitor") return "#e3edf2";
+  return PASTELS[index % PASTELS.length];
 }
 
 function cardTape(proj, index) {
-  return proj.id === "mark-making" ? "#c9ad8d" : TAPES[index % TAPES.length];
+  if (proj.id === "mark-making") return "#c9ad8d";
+  if (proj.id === "the-visitor") return "#bcd7e3";
+  return TAPES[index % TAPES.length];
 }
 
 // Little hand-drawn doodles sprinkled around the hero
