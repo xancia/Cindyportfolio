@@ -134,6 +134,26 @@ const DOODLES = [
     className: "text-accent/35",
     style: { bottom: "34%", right: "30%", width: 14, animationDelay: "1.1s" },
   },
+  {
+    d: SPARKLE,
+    className: "text-[#9fcfc7]/80",
+    style: { top: "43%", left: "24%", width: 20, animationDelay: "2.2s" },
+  },
+  {
+    d: HEART,
+    className: "text-[#f0b6c0]/80",
+    style: { top: "58%", right: "24%", width: 21, animationDelay: "3.7s" },
+  },
+  {
+    d: SPARKLE,
+    className: "text-[#88becd]/75",
+    style: { bottom: "22%", right: "33%", width: 17, animationDelay: "1.5s" },
+  },
+  {
+    d: HEART,
+    className: "text-accent/30",
+    style: { bottom: "21%", left: "30%", width: 18, animationDelay: "4.3s" },
+  },
 ];
 
 // A scrapbook-style artwork card you can drag around. A click (without
