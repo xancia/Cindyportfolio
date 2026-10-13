@@ -1,4 +1,5 @@
 import coldDuo from "./assets/cold-duo.jpg";
+import kukiDuo from "./assets/kuki-duo.jpg";
 
 // ================================================================
 //  CINDY MA PORTFOLIO — SITE CONTENT
@@ -164,6 +165,18 @@ const content = {
       description: "Character illustration featuring Cold Duo.",
       images: [coldDuo],
       cover: coldDuo,
+      featured: true,
+      fit: "contain",
+    },
+
+    {
+      id: "kuki-duo",
+      title: "Kuki Duo",
+      tag: "Rendering",
+      year: 2023,
+      description: "Character illustration featuring Kuki Duo.",
+      images: [kukiDuo],
+      cover: kukiDuo,
       featured: true,
       fit: "contain",
     },
