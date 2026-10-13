@@ -154,6 +154,56 @@ const DOODLES = [
     className: "text-accent/30",
     style: { bottom: "21%", left: "30%", width: 18, animationDelay: "4.3s" },
   },
+  {
+    d: HEART,
+    className: "text-[#ef8b9b]/75",
+    style: { top: "42%", right: "20%", width: 19, animationDelay: "2.8s" },
+  },
+  {
+    d: HEART,
+    className: "text-[#b99bd8]/75",
+    style: { top: "68%", left: "21%", width: 16, animationDelay: "1.7s" },
+  },
+  {
+    d: HEART,
+    className: "text-[#e4b85f]/80",
+    style: { bottom: "29%", right: "20%", width: 17, animationDelay: "3.2s" },
+  },
+  {
+    d: HEART,
+    className: "text-[#82bfc5]/80",
+    style: { top: "19%", left: "35%", width: 15, animationDelay: "4.6s" },
+  },
+  {
+    d: HEART,
+    className: "text-[#e59a76]/75",
+    style: { bottom: "12%", right: "37%", width: 16, animationDelay: "0.9s" },
+  },
+  {
+    d: HEART,
+    className: "text-[#d889b5]/70",
+    style: { top: "34%", right: "38%", width: 14, animationDelay: "2.5s" },
+  },
+  {
+    d: HEART,
+    className: "text-[#73aaa1]/75",
+    style: { top: "74%", right: "29%", width: 18, animationDelay: "3.8s" },
+  },
+  {
+    d: HEART,
+    className: "text-[#e9a9a1]/75",
+    style: { top: "48%", left: "18%", width: 15, animationDelay: "1.2s" },
+  },
+  {
+    d: HEART,
+    className: "text-[#a9a2d3]/75",
+    style: { bottom: "38%", right: "16%", width: 16, animationDelay: "4.8s" },
+  },
+  {
+    d: HEART,
+    className: "text-[#d9ae68]/75",
+    style: { bottom: "16%", left: "38%", width: 14, animationDelay: "0.6s" },
+  },
 ];
 
 // A scrapbook-style artwork card you can drag around. A click (without
