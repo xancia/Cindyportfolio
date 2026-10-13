@@ -190,6 +190,8 @@ const content = {
       description: "Collaborative OC game card illustration.",
       images: [teaParty],
       cover: teaParty,
+      orientation: "landscape",
+      thumbnailAspect: "3/2",
       featured: true,
       fit: "contain",
     },

@@ -46,7 +46,7 @@ export default function Work({ content }) {
             href={`#/project/${proj.id}`}
             className={`group cursor-pointer ${cardRows}`}
           >
-            <div className={`${proj.orientation === 'landscape' ? 'aspect-[16/9]' : 'aspect-[4/5]'} overflow-hidden rounded-xl`}>
+            <div className={`${proj.orientation === 'landscape' ? (proj.thumbnailAspect === '3/2' ? 'aspect-[3/2]' : 'aspect-[16/9]') : 'aspect-[4/5]'} overflow-hidden rounded-xl`}>
               <Img
                 src={(proj.cover || proj.images[0]).startsWith('/')
                   ? (proj.cover || proj.images[0])
