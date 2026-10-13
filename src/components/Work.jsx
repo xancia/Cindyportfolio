@@ -53,7 +53,7 @@ export default function Work({ content }) {
           <a
             key={proj.id}
             href={`#/project/${proj.id}`}
-            className={`group cursor-pointer ${cardRows}`}
+            className={`group cursor-pointer ${cardRows} ${proj.gridColumn === 1 ? 'col-start-1' : ''}`}
           >
             <div className={`${thumbnailAspect} overflow-hidden rounded-xl`}>
               <Img

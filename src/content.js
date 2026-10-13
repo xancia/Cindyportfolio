@@ -194,6 +194,7 @@ const content = {
       cover: teaParty,
       orientation: "landscape",
       thumbnailAspect: "3/2",
+      gridColumn: 1,
       featured: true,
       fit: "contain",
     },
