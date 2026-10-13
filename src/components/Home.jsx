@@ -59,6 +59,7 @@ const TAPES = [
 function cardPastel(proj, index) {
   if (proj.id === "quiet-hours") return "#d8ece8";
   if (proj.id === "little-mermaid-cover") return "#cfe6ed";
+  if (proj.id === "kuki-duo") return "#e6d2bc";
   if (proj.id === "mark-making") return "#ead8c0";
   if (proj.id === "the-visitor") return "#e3edf2";
   return PASTELS[index % PASTELS.length];
@@ -67,6 +68,7 @@ function cardPastel(proj, index) {
 function cardTape(proj, index) {
   if (proj.id === "quiet-hours") return "#9fcfc7";
   if (proj.id === "little-mermaid-cover") return "#88becd";
+  if (proj.id === "kuki-duo") return "#c9a883";
   if (proj.id === "mark-making") return "#c9ad8d";
   if (proj.id === "the-visitor") return "#bcd7e3";
   return TAPES[index % TAPES.length];
