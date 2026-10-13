@@ -40,6 +40,8 @@ export default function Work({ content }) {
             ? 'row-span-[10] sm:row-span-[9] lg:row-span-[11]'
             : proj.thumbnailAspect === '1/1'
               ? 'row-span-[16] sm:row-span-[15] lg:row-span-[19]'
+              : proj.thumbnailAspect === '7/10'
+                ? 'row-span-[22] sm:row-span-[20] lg:row-span-[24]'
               : 'row-span-[20] sm:row-span-[17] lg:row-span-[21]'
           const thumbnailAspect = proj.thumbnailAspect === '3/2'
             ? 'aspect-[3/2]'
