@@ -1,3 +1,5 @@
+import coldDuo from "./assets/cold-duo.jpg";
+
 // ================================================================
 //  CINDY MA PORTFOLIO — SITE CONTENT
 //
@@ -160,8 +162,8 @@ const content = {
       tag: "Rendering",
       year: 2023,
       description: "Character illustration featuring Cold Duo.",
-      images: ["Cold Duo.jpg"],
-      cover: "Cold Duo.jpg",
+      images: [coldDuo],
+      cover: coldDuo,
       featured: true,
       fit: "contain",
     },
