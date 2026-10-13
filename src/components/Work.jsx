@@ -38,7 +38,16 @@ export default function Work({ content }) {
         {filtered.map(proj => {
           const cardRows = proj.orientation === 'landscape'
             ? 'row-span-[10] sm:row-span-[9] lg:row-span-[11]'
-            : 'row-span-[20] sm:row-span-[17] lg:row-span-[21]'
+            : proj.thumbnailAspect === '1/1'
+              ? 'row-span-[16] sm:row-span-[15] lg:row-span-[19]'
+              : 'row-span-[20] sm:row-span-[17] lg:row-span-[21]'
+          const thumbnailAspect = proj.thumbnailAspect === '3/2'
+            ? 'aspect-[3/2]'
+            : proj.thumbnailAspect === '1/1'
+              ? 'aspect-square'
+              : proj.orientation === 'landscape'
+                ? 'aspect-[16/9]'
+                : 'aspect-[4/5]'
 
           return (
           <a
@@ -46,7 +55,7 @@ export default function Work({ content }) {
             href={`#/project/${proj.id}`}
             className={`group cursor-pointer ${cardRows}`}
           >
-            <div className={`${proj.orientation === 'landscape' ? (proj.thumbnailAspect === '3/2' ? 'aspect-[3/2]' : 'aspect-[16/9]') : 'aspect-[4/5]'} overflow-hidden rounded-xl`}>
+            <div className={`${thumbnailAspect} overflow-hidden rounded-xl`}>
               <Img
                 src={(proj.cover || proj.images[0]).startsWith('/')
                   ? (proj.cover || proj.images[0])
