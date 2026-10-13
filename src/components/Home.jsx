@@ -79,6 +79,13 @@ const HEART =
   "M12 21s-8-5.3-8-11a4.6 4.6 0 0 1 8-3 4.6 4.6 0 0 1 8 3c0 5.7-8 11-8 11z";
 const SQUIGGLE = "M2 14c3-7 6 7 10 0s6 7 10 0";
 
+function projectImage(proj) {
+  const image = proj.cover || proj.images[0];
+  return image.startsWith("/")
+    ? image
+    : asset(`/art/work/${proj.id}/${image}`);
+}
+
 const DOODLES = [
   {
     d: SPARKLE,
@@ -190,7 +197,7 @@ function FloatingCard({ proj, slot, index, onOpen }) {
           />
           <div className="aspect-[4/5] overflow-hidden rounded-xl pointer-events-none">
             <Img
-              src={asset(`/art/work/${proj.id}/${proj.cover || proj.images[0]}`)}
+              src={projectImage(proj)}
               alt={proj.title}
             />
           </div>
@@ -327,7 +334,7 @@ export default function Home({ content, navigate }) {
               />
               <div className="aspect-[4/5] overflow-hidden rounded-xl">
                 <Img
-                  src={asset(`/art/work/${proj.id}/${proj.cover || proj.images[0]}`)}
+                  src={projectImage(proj)}
                   alt={proj.title}
                 />
               </div>
