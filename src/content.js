@@ -250,8 +250,8 @@ const content = {
       tag: "Rendering",
       year: 2026,
       description: "Character illustration featuring the W101 Girlies.",
-      images: ["W101 Girlies.jpg"],
-      cover: "W101 Girlies.jpg",
+      images: ["w101-girlies.jpg"],
+      cover: "w101-girlies.jpg",
       fit: "contain",
     },
 
