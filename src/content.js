@@ -252,6 +252,7 @@ const content = {
       description: "Character illustration featuring the W101 Girlies.",
       images: ["w101-girlies.jpg"],
       cover: "w101-girlies.jpg",
+      thumbnailAspect: "2/3",
       fit: "contain",
     },
 
@@ -263,6 +264,7 @@ const content = {
       description: "Halloween alternate universe illustration featuring Charlotte.",
       images: ["happy-halloween-au-x-charlotte.jpg"],
       cover: "happy-halloween-au-x-charlotte.jpg",
+      thumbnailAspect: "4/3",
       fit: "contain",
     },
 
