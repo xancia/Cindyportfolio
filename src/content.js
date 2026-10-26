@@ -256,6 +256,17 @@ const content = {
     },
 
     {
+      id: "little-red-big-bad-wolf",
+      title: "Little Red & The Big Bad Wolf",
+      tag: "Rendering",
+      year: 2026,
+      description: "Halloween alternate universe illustration featuring Charlotte.",
+      images: ["happy-halloween-au-x-charlotte.jpg"],
+      cover: "happy-halloween-au-x-charlotte.jpg",
+      fit: "contain",
+    },
+
+    {
       id: "ghost-town",
       title: "Charlotte",
       tag: "Character",
