@@ -38,6 +38,8 @@ export default function Work({ content }) {
         {filtered.map(proj => {
           const cardRows = proj.orientation === 'landscape'
             ? 'row-span-[10] sm:row-span-[9] lg:row-span-[11]'
+            : proj.thumbnailAspect === '3/2'
+              ? 'row-span-[12] sm:row-span-[12] lg:row-span-[12]'
             : proj.thumbnailAspect === '2/3'
               ? 'row-span-[24] sm:row-span-[24] lg:row-span-[24]'
               : proj.thumbnailAspect === '4/3'

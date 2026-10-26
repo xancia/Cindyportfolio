@@ -360,6 +360,18 @@ const content = {
     },
 
     {
+      id: "snow-white-mock-up",
+      title: "Snow White Mock Up",
+      tag: "Typography",
+      year: 2025,
+      description: "Book mock up for Snow White.",
+      images: ["snow-book-mock-up.jpg"],
+      cover: "snow-book-mock-up.jpg",
+      thumbnailAspect: "3/2",
+      fit: "contain",
+    },
+
+    {
       id: "garden-state",
       title: "Placeholder",
       tag: "Personal",
