@@ -245,6 +245,17 @@ const content = {
     },
 
     {
+      id: "magic",
+      title: "Magic",
+      tag: "Rendering",
+      year: 2026,
+      description: "Character illustration featuring the W101 Girlies.",
+      images: ["W101 Girlies.jpg"],
+      cover: "W101 Girlies.jpg",
+      fit: "contain",
+    },
+
+    {
       id: "ghost-town",
       title: "Charlotte",
       tag: "Character",
